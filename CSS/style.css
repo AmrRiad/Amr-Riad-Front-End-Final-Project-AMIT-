@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap");
+
+:root {
+  --main-font: "Dosis", sans-serif;
+  --light-bg: #1b2430;
+  --main-color: #e94560;
+  --font-color: #fff;
+  --transition: 0.7s;
+  --border: 2px solid rgb(51, 51, 51);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url(../image/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: var(--font-color);
+  font-family: var(--main-font);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+}
+
+.overlay .container {
+  width: 50%;
+}
+
+.overlay .container .dataContainer {
+  background-color: #0a2647;
+  border: var(--border);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.overlay .container img {
+  width: 10%;
+}
+
+.form-control {
+  transition: all 0.2s;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: var(--main-color);
+  transform: scale(1.04);
+  color: white;
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
