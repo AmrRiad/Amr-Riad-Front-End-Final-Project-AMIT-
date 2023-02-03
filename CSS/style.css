@@ -55,6 +55,8 @@ body {
   font-weight: normal;
   text-decoration: inherit;
   border: none;
+  height: 100%;
+  min-width: 50%;
 }
 
 .form-control:focus {
@@ -66,4 +68,47 @@ body {
   -moz-transform: scale(1.04);
   -ms-transform: scale(1.04);
   -o-transform: scale(1.04);
+}
+
+.signBtn {
+  width: 200px;
+}
+
+.userAlert {
+  color: rgb(209, 24, 24);
+  font-size: 18px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .overlay .container img {
+    width: 15%;
+  }
+  .signBtn {
+    width: 150px;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 768px) {
+  .overlay .container img {
+    width: 20%;
+  }
+  .signBtn {
+    width: 100px;
+  }
+}
+@media (max-width: 530px) {
+  .overlay .container img {
+    width: 25%;
+  }
+  .signBtn {
+    width: 40px;
+  }
+}
+
+.registerLink {
+  text-decoration: none;
+}
+
+.registerLink:hover {
+  color: #e94560 !important;
 }

@@ -25,6 +25,9 @@
             <div class="text-center">
               <img class="" src="../image/icon.png" alt="logo" />
             </div>
+            <span id="allData" class="form-text d-none userAlert my-5 ms-1"
+              >Please Enter Your credentials</span
+            >
             <div class="form-group mb-3">
               <label for="username" class="m-1">Username</label>
               <input
@@ -35,6 +38,9 @@
               />
               <span id="userNameAlert" class="form-text d-none userAlert"
                 >Please Enter Your Username</span
+              >
+              <span id="userInvalid" class="form-text d-none userAlert"
+                >Username is not valid</span
               >
             </div>
             <div class="form-group mb-3">
@@ -48,13 +54,20 @@
               <span id="passAlert" class="form-text d-none userAlert"
                 >Please Enter Your Password</span
               >
+              <span id="incorrectPass" class="form-text d-none userAlert"
+                >Incorrect Password !</span
+              >
             </div>
-            <a href="login.html" id="signInBtn" class="btn btn-danger w-100"
-              >Sign In</a
-            >
+            <a id="signIn" class="btn btn-danger w-100 my-2">Sign In</a>
+            <div class="form-group text-center py-2 link">
+              <a href="index.html" class="text-light registerLink"
+                >Didn't Have Account ? Register Now</a
+              >
+            </div>
           </form>
         </div>
       </div>
     </div>
+    <script src="../JS/login.js"></script>
   </body>
 </html>

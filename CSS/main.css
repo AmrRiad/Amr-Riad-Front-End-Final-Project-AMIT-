@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap");
+
+:root {
+  --main-font: "Dosis", sans-serif;
+  --light-bg: #1b2430;
+  --main-color: #e94560;
+  --font-color: #fff;
+  --transition: 0.7s;
+  --border: 2px solid rgb(51, 51, 51);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--font-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--light-bg);
+  border-radius: 10px;
+}
+
+#navBar {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--light-bg);
+  width: 70%;
+  border-radius: 6px;
+  z-index: 1111;
+}
+
+.logo {
+  width: 2.5rem;
+}
+
+#navBar .container ul {
+  margin: 0 !important;
+}
+
+#navBar .container ul li {
+  list-style: none;
+}
+
+#navBar .container ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: bold;
+  font-size: 17px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+#navBar .container ul li:hover a {
+  color: var(--main-color);
+  transform: translateY(-15%);
+  -webkit-transform: translateY(-15%);
+  -moz-transform: translateY(-15%);
+  -ms-transform: translateY(-15%);
+  -o-transform: translateY(-15%);
+}
+
+#home {
+  background-image: url(../image/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+}
+
+.homeData {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeText {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#home .overlay .homeData span {
+  color: var(--main-color);
+}
+
+#about .aboutCard {
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+#about .aboutCard:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: var(--transition) ease-in-out;
+  z-index: -1;
+  transform: skewX(180deg);
+  -webkit-transform: skewX(180deg);
+  -moz-transform: skewX(180deg);
+  -ms-transform: skewX(180deg);
+  -o-transform: skewX(180deg);
+  -webkit-transition: var(--transition) ease-in-out;
+  -moz-transition: var(--transition) ease-in-out;
+  -ms-transition: var(--transition) ease-in-out;
+  -o-transition: var(--transition) ease-in-out;
+}
+
+#about .aboutCard:hover:after {
+  transform: skewX(0deg);
+  left: 0;
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  background-color: var(--main-color);
+}
+
+#about .aboutCard:hover {
+  transform: translateY(-5%);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+}
+
+#categories {
+  min-height: 100vh;
+  background: var(--light-bg);
+  color: var(--font-color);
+}
+
+#categories h3 {
+  border-bottom: solid 2px var(--main-color);
+  font-size: 2rem;
+}
+
+#categories .image img {
+  height: 60vh;
+}
