@@ -1,5 +1,5 @@
 "use strict";
-
+// start variables
 let signInBtn = document.getElementById("signIn");
 let allUsers = JSON.parse(localStorage.getItem("allUsers"));
 let userNameAlert = document.getElementById("userNameAlert");
@@ -7,7 +7,9 @@ let userInvalid = document.getElementById("userInvalid");
 let passAlert = document.getElementById("passAlert");
 let incorrectPass = document.getElementById("incorrectPass");
 let allDataError = document.getElementById("allData");
+// end variables
 
+// start functions
 function login() {
   let userName = document.getElementById("userName").value;
   let userPassword = document.getElementById("userPassword").value;
@@ -37,5 +39,8 @@ function login() {
     }
   }
 }
+// end functions
 
+// start events
 signInBtn.addEventListener("click", login);
+// end events

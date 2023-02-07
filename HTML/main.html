@@ -26,20 +26,23 @@
       <img class="loadingImg" src="../image/icon.png" alt="" />
     </div>
     <div class="to-up position-fixed end-0 bottom-0 m-5 fa-2x">
-      <i class="fas fa-arrow-alt-circle-up"></i>
+      <i class="fas fa-arrow-alt-circle-up top"></i>
     </div>
     <nav id="navBar" class="navBar p-3">
       <div class="container d-flex justify-content-between align-items-center">
         <a href="#home">
           <img class="logo" src="../image/icon.png" alt="logo" />
         </a>
-        <ul class="d-flex align-items-center">
+        <button class="burgerMenu">
+          <i class="fas fa-bars burgerIcon my-auto mx-1"></i>
+        </button>
+        <ul class="align-items-center linkGroup">
           <li class="px-2"><a href="#home">Home</a></li>
           <li class="px-2"><a href="#about">About</a></li>
           <li class="px-2"><a href="#categories">Categories</a></li>
           <li class="px-2"><a href="movies.html">Movies</a></li>
         </ul>
-        <ul class="d-flex align-items-center">
+        <ul class="addlinkGroup">
           <li id="UserName" class="px-2 text-light text-uppercase"></li>
           <li><a href="index.html" class="logout">logOut</a></li>
         </ul>
@@ -49,7 +52,7 @@
       <div class="overlay">
         <div class="container homeData">
           <h1 class="fa-4x">Welcome To <span>Movies</span> Hub</h1>
-          <p class="homeText">
+          <p class="homeText text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
             culpa vitae blanditiis nulla impedit dolorem?
           </p>
@@ -59,7 +62,7 @@
     <section id="about" class="py-5 text-dark">
       <div class="container">
         <div class="py-5 text-center">
-          <p class="text-muted">
+          <p class="text-muted caption">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
             earum vel doloremque neque minima, enim quidem. At odit labore
             exercitationem facere illum minus placeat nobis libero inventore
@@ -139,22 +142,31 @@
     <footer class="bg-dark text-center py-5">
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-3">
+          <div class="col-lg-8 col-md-6">
             <div class="footer text-white">
               <h6>
                 © Copyright. All Reserved <span class="name">Amr Riad</span>
               </h6>
               <div
-                class="footer-social d-flex justify-content-evenly align-items-baseline py-2"
+                class="footer-social d-flex justify-content-center align-items-baseline py-2"
               >
-                <a href="https://www.facebook.com/yusuf.mhamed.9/"
+                <a
+                  target="_blank"
+                  class="p-2"
+                  href="https://www.facebook.com/amr.reyad1"
                   ><i class="fa-brands fa-facebook icon"></i
                 ></a>
                 <a
-                  href="https://www.linkedin.com/in/yousef-elkhawanki-b51456219/"
+                  target="_blank"
+                  class="p-2"
+                  href="https://www.linkedin.com/in/amr-riad-aa138a174/"
                   ><i class="fa-brands fa-linkedin icon"></i
                 ></a>
-                <a href="https://github.com/Y19M97">
+                <a
+                  target="_blank"
+                  class="p-2"
+                  href="https://github.com/AmrRiad"
+                >
                   <i class="fa-brands fa-github icon"></i>
                 </a>
               </div>

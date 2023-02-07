@@ -10,6 +10,7 @@
   --border: 2px solid rgb(51, 51, 51);
 }
 
+/* reset margin and padding */
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +54,8 @@ body {
 
 /* end the overlay section */
 
+/* start styling register form */
+
 .form-control {
   transition: all 0.2s;
   font-family: FontAwesome;
@@ -79,10 +82,28 @@ body {
   width: 200px;
 }
 
+/* common styling for "register and login pages" */
+
 .userAlert {
   color: rgb(209, 24, 24);
   font-size: 18px !important;
 }
+
+/* end styling register form */
+
+/* start styling registerLink in login page*/
+
+.registerLink {
+  text-decoration: none;
+}
+
+.registerLink:hover {
+  color: #e94560 !important;
+}
+
+/* end styling registerLink in login page*/
+
+/* start customize register page response */
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .overlay .container img {
@@ -105,15 +126,6 @@ body {
   .overlay .container img {
     width: 25%;
   }
-  .signBtn {
-    width: 40px;
-  }
 }
 
-.registerLink {
-  text-decoration: none;
-}
-
-.registerLink:hover {
-  color: #e94560 !important;
-}
+/* end customize register page response */
