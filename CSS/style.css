@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap");
 
+/* main usable styles */
 :root {
   --main-font: "Dosis", sans-serif;
   --light-bg: #1b2430;
@@ -25,6 +26,8 @@ body {
   font-family: var(--main-font);
 }
 
+/* styling the overlay section */
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
@@ -47,6 +50,8 @@ body {
 .overlay .container img {
   width: 10%;
 }
+
+/* end the overlay section */
 
 .form-control {
   transition: all 0.2s;

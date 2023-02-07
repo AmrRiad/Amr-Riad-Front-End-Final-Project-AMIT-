@@ -27,7 +27,7 @@ function createNewAccount() {
     userPassword !== "" &&
     userPassword === rePassword
   ) {
-    var user = {
+    let user = {
       userName: userName,
       userEmail: userEmail,
       userPassword: userPassword,
@@ -43,6 +43,9 @@ function createNewAccount() {
     userPassword !== rePassword
   ) {
     passMatchAlert.classList.remove("d-none");
+    userNameAlert.classList.add("d-none");
+    emailAlert.classList.add("d-none");
+    allDataError.classList.add("d-none");
   } else if (
     userName === "" &&
     userEmail !== "" &&
@@ -51,6 +54,8 @@ function createNewAccount() {
   ) {
     userNameAlert.classList.remove("d-none");
     passMatchAlert.classList.remove("d-none");
+    emailAlert.classList.add("d-none");
+    allDataError.classList.add("d-none");
   } else if (
     userName !== "" &&
     userEmail === "" &&
@@ -59,6 +64,8 @@ function createNewAccount() {
   ) {
     emailAlert.classList.remove("d-none");
     passMatchAlert.classList.remove("d-none");
+    userNameAlert.classList.add("d-none");
+    allDataError.classList.add("d-none");
   } else if (
     userName === "" &&
     userEmail === "" &&
@@ -67,6 +74,8 @@ function createNewAccount() {
   ) {
     userNameAlert.classList.remove("d-none");
     emailAlert.classList.remove("d-none");
+    passMatchAlert.classList.remove("d-none");
+    allDataError.classList.add("d-none");
   } else if (
     userName === "" &&
     userEmail === "" &&

@@ -14,12 +14,21 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css "
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../CSS/main.css" />
   </head>
   <body>
-    <nav id="navBar" class="p-3">
+    <div class="loadingPage loadingPage-active">
+      <img class="loadingImg" src="../image/icon.png" alt="" />
+    </div>
+    <div class="to-up position-fixed end-0 bottom-0 m-5 fa-2x">
+      <i class="fas fa-arrow-alt-circle-up"></i>
+    </div>
+    <nav id="navBar" class="navBar p-3">
       <div class="container d-flex justify-content-between align-items-center">
         <a href="#home">
           <img class="logo" src="../image/icon.png" alt="logo" />
@@ -28,11 +37,11 @@
           <li class="px-2"><a href="#home">Home</a></li>
           <li class="px-2"><a href="#about">About</a></li>
           <li class="px-2"><a href="#categories">Categories</a></li>
-          <li class="px-2"><a href="">Movies</a></li>
+          <li class="px-2"><a href="movies.html">Movies</a></li>
         </ul>
         <ul class="d-flex align-items-center">
-          <li id="UserName" class="px-2 text-light"></li>
-          <li><a class="">logOut</a></li>
+          <li id="UserName" class="px-2 text-light text-uppercase"></li>
+          <li><a href="index.html" class="logout">logOut</a></li>
         </ul>
       </div>
     </nav>
@@ -90,17 +99,70 @@
         <div class="row align-items-center g-5">
           <div class="col-md-6">
             <div class="image rounded shadow overflow-hidden">
-              <img class="w-100" src="../image/3.jpg" alt="" />
+              <img class="w-100" src="../image/1.jpg" alt="" />
             </div>
           </div>
           <div class="col-md-6">
             <div class="image rounded shadow overflow-hidden">
-              <img class="w-100" src="../image/1.jpg" alt="" />
+              <img class="w-100" src="../image/3.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="changedNumbers">
+      <div class="overlay py-5">
+        <div class="container">
+          <div class="row justify-content-around g-5">
+            <div class="col-md-4 numberContainer">
+              <div class="changedBox text-center">
+                <span class="fs-2 reviewNumber number">2915K</span>
+                <h5 class="text-white">Reviews</h5>
+              </div>
+            </div>
+            <div class="col-md-4 numberContainer">
+              <div class="changedBox text-center">
+                <span class="fs-2 watchingNumber number">3533K</span>
+                <h5 class="text-white">Watching</h5>
+              </div>
+            </div>
+            <div class="col-md-4 numberContainer">
+              <div class="changedBox text-center">
+                <span class="fs-2 subscribeNumber number">4120K</span>
+                <h5 class="text-white">Subscribe</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-center py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-3">
+            <div class="footer text-white">
+              <h6>
+                © Copyright. All Reserved <span class="name">Amr Riad</span>
+              </h6>
+              <div
+                class="footer-social d-flex justify-content-evenly align-items-baseline py-2"
+              >
+                <a href="https://www.facebook.com/yusuf.mhamed.9/"
+                  ><i class="fa-brands fa-facebook icon"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/yousef-elkhawanki-b51456219/"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+                <a href="https://github.com/Y19M97">
+                  <i class="fa-brands fa-github icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../JS/main.js"></script>
   </body>
 </html>
